@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login2">
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.beebration_v2.register"
+        android:label="register" >
+        <action
+            android:id="@+id/action_register_to_home3"
+            app:destination="@id/home3" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.example.beebration_v2.home"
+        android:label="home" />
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.beebration_v2.login"
+        android:label="login" >
+        <action
+            android:id="@+id/action_login2_to_register"
+            app:destination="@id/register" />
+    </fragment>
+</navigation>
